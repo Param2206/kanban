@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  project_id      Int               @id @default(autoincrement())
+  title           String            
+  description     String
+  tasks       Task[] // Relation to Task model
+  taskOrders    TaskOrder[]
+}
+
+model Task {
+  task_id     Int     @id @default(autoincrement())
+  title       String
+  description String
+  priority    String  // Since priority has limited values, you can enforce it in your application logic
+  status      String
+  due_date    DateTime? // Using DateTime for more flexibility; adjust as per your needs
+  project_id  Int
+  project     Project @relation(fields: [project_id], references: [project_id])
+
+  // Foreign key relation to Project model
+  @@index([project_id], name: "project_id")
+}
+
+model TaskOrder {
+  category     String 
+  taskIds      String @unique
+  project_id   Int
+  project      Project @relation(fields: [project_id], references: [project_id])
+
+  @@index([project_id], name: "project_id_2")
+}

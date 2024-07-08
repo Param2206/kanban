@@ -1,0 +1,289 @@
+{
+    "boards": [
+      {
+        "id": "1",
+        "title": "Project A",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "categories": [
+          {
+            "id": 1,
+            "title": "To Do",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "In Progress",
+            "tasks": [
+              {
+                "id": 3,
+                "title": "Task 3",
+                "dueDate": "2024-07-10",
+                "status": "In Progress",
+                "priority": "Low",
+                "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Completed",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Project B",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "categories": [
+          {
+            "id": 1,
+            "title": "To Do",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "In Progress",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Completed",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Project C",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "categories": [
+          {
+            "id": 1,
+            "title": "To Do",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "In Progress",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Completed",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Project D",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "categories": [
+          {
+            "id": 1,
+            "title": "To Do",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "In Progress",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Completed",
+            "tasks": [
+              {
+                "id": 1,
+                "title": "Task 1",
+                "dueDate": "2024-06-30",
+                "status": "To Do",
+                "priority": "High",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              },
+              {
+                "id": 2,
+                "title": "Task 2",
+                "dueDate": "2024-07-05",
+                "status": "To Do",
+                "priority": "Medium",
+                "description": "Nulla facilisi. Proin vel ex feugiat, malesuada est ut, tempus odio."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
