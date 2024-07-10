@@ -2,7 +2,7 @@
 
 import CategoryCard from "../../ui/board/categoryCard";
 import { DragDropContext } from "react-beautiful-dnd";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function BoardContainer({
   projectId,
@@ -13,13 +13,10 @@ export default function BoardContainer({
 }:
 any) {
   const [categoriesState, setCategoriesState] = useState(categories);
-  const [previousCategoriesState, setPreviousCategoriesState] =
+  const [previousCategoriesState] =
     useState(categories);
   const [tasks, setTasks] = useState(tasksProps);
 
-  console.log("tasks state=",tasks);
-
-  console.log("categoriesState =", categoriesState);
   function findExtraElement(a: any, b: any) {
     const setA = new Set(a);
 
@@ -66,7 +63,6 @@ any) {
         sourceCategory.taskIds,
         newTaskIds
       );
-      console.log("test=", test);
       setTasks(test);
     } else {
       const newSourceTaskIds = Array.from(sourceCategory.taskIds);
@@ -97,7 +93,6 @@ any) {
         destinationCategory.taskIds,
         newDestinationTaskIds
       );
-      console.log("test 2=",test2);
       setTasks(test2);
 
       const taskIdToUpdate = findExtraElement(
@@ -108,21 +103,18 @@ any) {
       );
       const test3 = await onCategoryUpdate(projectId, taskIdToUpdate, destinationCategory.category);
       setTasks(test3);
-      console.log("test 3=", test3);
     }
   };
     return (
       <DragDropContext onDragEnd={handleDragEnd}>
         <main className="flex space-x-6">
           {categoriesState.map((categoryState: any, i: number) => {
-            console.log("tasks =", tasks);
             const filteredTasks = tasks.filter(
               (task: any) => task.status === categoryState.category
             );
             const sortedTasks = categoryState.taskIds.map((taskId: number) =>
               filteredTasks.find((task: any) => task.task_id == taskId)
             );
-            console.log("sorted =", filteredTasks, sortedTasks);
             return (
               <CategoryCard
                 key={categoryState.category}

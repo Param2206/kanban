@@ -13,7 +13,6 @@ function AddTask() {
 
   const Pathname = usePathname();
   const projectId = Number(Pathname.split("/")[2]);
-  console.log(projectId);
 
   return (
     <main className="p-4">

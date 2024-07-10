@@ -14,13 +14,12 @@ export default async function Page({ params }: { params: { id: string } }) {
   // Convert id to integer to access the correct board index
   const boardId = parseInt(id, 10);
   const tasks = await fetchTasksByProject(boardId);
-  console.log("tasks in parent=", tasks);
   const taskIdsAll = await fetchTaskOrderByProject(boardId);
   let categories: any = [];
   // Extract unique statuses
   if (taskIdsAll) {
 
-    taskIdsAll.forEach((taskIdItem) => {
+    taskIdsAll.forEach((taskIdItem: any) => {
       const taskIds = taskIdItem.taskIds.split(",").map(Number);
 
       const task = {
@@ -32,11 +31,11 @@ export default async function Page({ params }: { params: { id: string } }) {
     });
   } else {
     const uniqueStatuses = Array.from(
-      new Set(tasks.map((task) => task.status))
+      new Set(tasks.map((task: any) => task.status))
     );
-    uniqueStatuses.map((status) => {
-      const categorizedTasks = tasks.filter((task) => task.status === status);
-      const taskIds = categorizedTasks.map((task) => task.task_id);
+    uniqueStatuses.map((status: any) => {
+      const categorizedTasks = tasks.filter((task: any) => task.status === status);
+      const taskIds = categorizedTasks.map((task: any) => task.task_id);
       let category = { category: status, taskIds: taskIds };
       categories.push(category);
     });

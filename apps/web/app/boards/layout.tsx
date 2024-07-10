@@ -1,7 +1,7 @@
 import Navbar from "../ui/navbar";
 import { ThemeProvider } from "next-themes";
 
-export const experimental_ppr = true;
+// export const experimental_ppr = true;
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

@@ -1,3 +1,4 @@
+// import Image from "next/image";
 import DarkModeToggle from "./darkModeToggle";
 
 export default function Navbar() {

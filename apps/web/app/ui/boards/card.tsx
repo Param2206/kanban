@@ -1,4 +1,3 @@
-import { Board } from "@/app/lib/definitions";
 import Link from "next/link";
 
 function Card({ board }: any) {
